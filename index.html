@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReStyle - Рекламное агентство</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="#onas" class="header__link">о нас</a></li>
+                        <li><a href="#usluga" class="header__link">НАШИ УСЛУГИ</a></li>
+                        <li><a href="#block__works__company" class="header__link">НАШИ РАБОТЫ</a></li>
+                        <li><a href="#contact" class="header__link">КОНТАКТЫ</a></li>
+                        <li><a href="#client" class="header__link">КЛИЕНТАМ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- slider -->
+    <div class="slide_bg">
+        <div class="slide">
+            <div class="slide__item">
+                <img src="./img/slide/leader-1400x600.jpg" alt="">
+            </div>
+            <div class="slide__item">
+                <img src="./img/slide/leader-1400x600.jpg" alt="">
+            </div>
+            <div class="slide__item">
+                <img src="./img/slide/leader-1400x600.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sub_ads">
+        <span>если вы тоже  хотите увидеть вашу рекламу  здесь. Нажмите  кнопку </span>
+        <button class="myBtn"> подать рекламу</button>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="header_modal">
+                <label for="">Заполните форму</label>
+                <span id="close"><img src="./img/icons/close.svg" alt=""></span>
+            </div>
+            <div class="sub-input">
+                <div class="input-form">
+                    <label for="int-name">Имя</label>
+                    <input type="text" placeholder="Ваше имя" class="int-name">
+                    <label for="int-num">Мобильнный номер </label>
+                    <input type="number" placeholder="Телефон" class="int-num">
+                    <label for="int-wp">WhatsApp номер </label>
+                    <input type="number" placeholder="WhatsApp номер" class="int-wp">
+                </div>
+                <div class="sub-form">
+                    <input type="submit" value="Отмена" id="cancel">
+                    <input type="submit" value="Отправить" id="Sub">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-message">
+        <div class="modal_message">
+            <div class="img-suc">
+                <img src="./img/sucsess.png" alt="">
+                <h2> Заявка отправлено!</h2>
+            </div>
+            <input type="submit" value="Закрыт" class="can">
+        </div>
+    </div>
+    <div class="container">
+        <div class="block__about " id="onas">
+            <div class="text__about">
+                <b>О НАС</b>
+                <p>RESTYLE- часть рекламной сети городских сайтов и страниц в социальных сетях. Бурно-развивающееся рекламное агентство, основанное в начале 2020го года.</p>
+            </div>
+            <div class="video__about">
+                <video src="./videos/Venom.mp4" controls="controls" poster="videos/video_baner.svg"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="usluga">
+        <div class="block__services ">
+            <div class="text__services">
+                <b>НАШИ УСЛУГИ</b>
+                <p>Наше агентство предоставляет возможности покупки рекламы всех видов, услуги медиа-маркетинга и 1С с командой профессиональных программистов, фотографов, видео-операторов и СММ-специалистов.</p>
+            </div>
+            <div class="block__items__services">
+                <div class="block__item__ads">
+                    <div class="ramka">
+                        <div class="icon__text">
+                            <img src="./img/vectors/ads.svg" alt="" class="ads-img">
+                            <b>наружная реклама</b>
+                        </div>
+                    </div>
+                    <div class="hover__block__ads">
+                        <div class="block__ads__texts">
+                            <p>Широкоформатная и высокоточная печать.</p>
+                            <p>Создания уникального дизайна.</p>
+                            <p>Распечатка и установка рекламных баннеров. </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="block__item__poly">
+                    <div class="ramka">
+                        <div class="icon__text">
+                            <img src="./img/vectors/poly.svg" alt="">
+                            <b>Услуги полиграфии</b>
+                        </div>
+                    </div>
+                    <div class="hover__block__poly">
+                        <div class="block__ads__texts">
+                            <p>Флаеры | листовки | буклеты.</p>
+                            <p>Визитки | этикетки</p>
+                            <p>Пригласительные | </p>
+                            <p>Каталоги | грамоты</p>
+                            <p>Меню | бланки | открытки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block__item__web">
+                    <div class="ramka">
+                        <div class="icon__text">
+                            <img src="./img/vectors/web.svg" alt="">
+                            <b>WEb - разработка</b>
+                        </div>
+                    </div>
+                    <div class="hover__block__web">
+                        <div class="block__ads__texts">
+                            <p>Разработка веб-приложений,</p>
+                            <p>Интернет-магазинов,</p>
+                            <p>Онлайн рекламы. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__item__smm">
+                    <div class="ramka">
+                        <div class="icon__text">
+                            <img src="./img/vectors/smm.svg" alt="">
+                            <b>SMM - продвижение</b>
+                        </div>
+                    </div>
+                    <div class="hover__block__smm">
+                        <div class="block__ads__texts">
+                            <p>Оформление инстаграма,</p>
+                            <p>Ведение бизнес аккаунта,</p>
+                            <p>Таргетированная реклама.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__item__1c">
+                    <div class="ramka">
+                        <div class="icon__text">
+                            <img src="./img/vectors/1c.svg" alt="">
+                            <b>1С бугалтерия</b>
+                        </div>
+                    </div>
+                    <div class="hover__block__1c">
+                        <div class="block__ads__texts">
+                            <p>1С Бухгалтерия</p>
+                            <p>Услуги по установке касового оборудования для оптовой и розничной торговли.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="bg_black">
+        <div class="block__order__ads ">
+            <div class="container">
+                <div class=" order">
+                    <span>если вы   хотите ОНЛАЙН ОБСЛУЖИВАНИЕ Нажмите  кнопку ➡
+            </span>
+                    <button class="myBtn1">ЗАКАЗАТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="client">
+        <div class="block__clients ">
+            <div class="block__text__clinet">
+                <b>Наши  клиенты</b>
+                <p>Рекламное агентсво "RESTYLE" работает со всеми, кто обращается к нам за услугами.</p>
+            </div>
+            <div class="slider__clients">
+                <div class="slider__item__c slidehov1">
+                    <div class="slide-hover-img">
+                        <img src="./img/slide/slide_client.svg" alt="" class="slhv">
+                        <div class="hover-soc">
+                            <ul>
+                                <li>
+                                    <a href="http://instagram.com/"><img src="./img/insta.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="http://t.me/"><img src="./img/tg.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="http://wa.me/"><img src="./img/wp.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="http://fb.com/"><img src="./img/fb.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item__c">
+                    <img src="./img/slide/slide_client.svg" alt="">
+                </div>
+                <div class="slider__item__c ">
+                    <img src="./img/slide/slide_client.svg" alt="">
+                </div>
+                <div class="slider__item__c">
+                    <img src="./img/slide/slide_client.svg" alt="">
+
+                </div>
+                <div class="slider__item__c">
+                    <img src="./img/slide/slide_client.svg" alt="">
+                </div>
+                <div class="slider__item__c">
+                    <img src="./img/slide/slide_client.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="block__works__company">
+        <div id="text__works">
+            <div class="container">
+                <b>Наши  работы</b>
+                <p>Задача организации заключается в качественной и эффективной работе с клиентами.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="our__works ">
+                <div class="left__menu__our">
+                    <ul class="left-menu">
+                        <li onclick="show('Page1');">
+                            <img src="./img/vectors/ads1.png" alt="" class="ads1">
+                            <b>наружная реклама</b>
+                            <img src="./img/vectors/next-work.svg" alt="" class="next_icon_work">
+                        </li>
+                        <li onclick="show('Page2');">
+                            <img src="./img/vectors/poly.svg" alt="">
+                            <b>Услуги полиграфии</b>
+                            <img src="./img/vectors/next-work.svg" alt="" class="next_icon_work">
+                        </li>
+                        <li>
+                            <img src="./img/vectors/web.svg" alt="">
+                            <b>WEb - разработка</b>
+                            <img src="./img/vectors/next-work.svg" alt="" class="next_icon_work">
+                        </li>
+                        <li>
+                            <img src="./img/vectors/smm.svg" alt="">
+                            <b>SMM - продвижение</b>
+                            <img src="./img/vectors/next-work.svg" alt="" class="next_icon_work">
+                        </li>
+                        <li>
+                            <img src="./img/vectors/1c.svg" alt="">
+                            <b>1С бугалтерия</b>
+                            <img src="./img/vectors/next-work.svg" alt="" class="next_icon_work">
+                        </li>
+                    </ul>
+                </div>
+                <div class="viedo__slider page" id="Page1">
+                    <div class="video__item">
+                        <video controls="controls" poster="videos/video block.png">
+                            <source src="./videos/Venom.mp4" >
+                        </video>
+                    </div>
+                    <div class="video__item">
+                        <video controls="controls">
+                            <source src="./videos/Drone_video.mp4" >
+                        </video>
+                    </div>
+                    <div class="video__item">
+                        <video controls="controls" poster="videos/video block.png">
+                            <source src="./videos/Drone_video.mp4" >
+                        </video>
+                    </div>
+                </div>
+                <!-- POlYGRAPHY -->
+                <div class="viedo__slider page" id="Page2">
+                    <div class="video__item">
+                        <video controls="controls">
+            <source src="./videos/Drone_video.mp4" >
+          </video>
+                    </div>
+                    <div class="video__item">
+                        <video controls="controls">
+            <source src="./videos/Drone_video.mp4" >
+          </video>
+                    </div>
+                    <div class="video__item">
+                        <video controls="controls" poster="videos/video block.png">
+            <source src="./videos/Drone_video.mp4" >
+          </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="block__comment">
+        <div class="comment__title">
+            <b>Отзывы</b>
+        </div>
+        <div class="block_user_slide">
+            <div class="block__user__comment container">
+                <img src="./img/user-logo.svg" alt="">
+                <div class="user__comment">
+                    <b>Анна Иванова</b>
+                    <p>It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
+                        which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                        Overall it was a good experience and could recommend. </p>
+                </div>
+            </div>
+            <div class="block__user__comment container">
+                <img src="./img/user-logo.svg" alt="">
+                <div class="user__comment">
+                    <b>Анна Иванова</b>
+                    <p>It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
+                        which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                        Overall it was a good experience and could recommend. </p>
+                </div>
+            </div>
+            <div class="block__user__comment container">
+                <img src="./img/user-logo.svg" alt="">
+                <div class="user__comment">
+                    <b>Анна Иванова</b>
+                    <p>It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
+                        which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                        Overall it was a good experience and could recommend. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-con">
+                <ul class="logo-foot">
+                    <li><img src="./img/logo-white.png" alt=""></li>
+                </ul>
+                <ul class="soderjim">
+                    <b>Информации</b>
+                    <li><a href="#onas">О нас</a> </li>
+                    <li><a href="#usluga"> Наши работы</a></li>
+                    <li><a href="#client">Клиенты</a> </li>
+                    <li><a href="#contact">Контакты</a> </li>
+                </ul>
+                <ul class="contacts" id="contact">
+                    <b>Контакты</b>
+                    <li><img src="./img/icons/phone.svg" alt=""><span> +996 550 81-84-89</span> </li>
+                    <li><img src="./img/icons/email.svg" alt=""><span> Reklama_portal_kg@mail.ru</span> </li>
+                    <li><img src="./img/icons/location.svg" alt=""><span> г. Ош, ул. Раимбекова 18а</span> </li>
+                </ul>
+                <div class="follow-soc">
+                    <b>Следуйте нас</b>
+                    <ul>
+                        <a href="https://www.instagram.com/biznes.kg.kg/" target="_blank">
+                            <li class="insta_hov"></li>
+                        </a>
+                        <a href="http://t.me/996550818489" target="_blank">
+                            <li class="tg_hov"></li>
+                        </a>
+                        <a href="http://wa.me/996550818489" target="_blank">
+                            <li class="wp_hov"></li>
+                        </a>
+                        <a href="" target="_blank">
+                            <li class="fb_hov"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_top">
+                <a href="#"><img src="./img/icons/top-bot.png" alt="" class="bottom__top"></a>
+            </div>
+        </div>
+        <span class="foo-all container">© Biznes.kg Ош-2020г</span>
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
